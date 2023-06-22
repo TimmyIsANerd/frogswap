@@ -39,20 +39,11 @@ export default function Dex() {
       <Head>
         <title>FrogSwap | DEX</title>
       </Head>
-      <div className="flex justify-center items-center py-3 w-full">
-        <div className="flex justify-center items-center rounded-[30px] bg-[#fff]/[.11] py-1 px-1">
-          <ToggleButton isActive={route === Route.SWAP} onClick={() => push(`/dex?tab=${Route.SWAP}`)}>
-            <span>Swap</span>
-          </ToggleButton>
-          <ToggleButton isActive={route === Route.LIQUIDITY} onClick={() => push(`/dex?tab=${Route.LIQUIDITY}`)}>
-            <span>Liquidity</span>
-          </ToggleButton>
-        </div>
-      </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center flex-col gap-3">
         <Image src="/frogswap.png" width={150} height={150} alt="Frog Swap Logo" />
+        <p className='text-4xl'>Frog Swap</p>
       </div>
-      <div className="flex justify-center items-center my-10 px-2 w-full">
+      <div className="flex justify-center items-center my-16 px-2 w-full">
         <RenderedChild />
       </div>
     </>
