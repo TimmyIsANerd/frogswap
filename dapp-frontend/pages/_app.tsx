@@ -8,7 +8,7 @@ import { Web3ReactProvider } from '@web3-react/core';
 import Web3 from 'web3';
 import { GoogleAnalytics } from 'nextjs-google-analytics';
 import Header from '../ui/Header';
-// import Footer from '../ui/Footer';
+import Footer from '../ui/Footer';
 import { DEXSettingsContextProvider } from '../contexts/dex/settings';
 import { Web3ContextProvider } from '../contexts/web3';
 import { GQLProvider } from '../contexts/graphql';
@@ -23,6 +23,7 @@ const AppContent = ({ children }: any) => {
     <div className="bg-[#0c0c0c] min-h-screen scroll-smooth flex flex-col w-screen overflow-hidden relative">
       <Header />
       <div className="overflow-auto flex-1">{children}</div>
+      <Footer />
     </div>
   );
 };
