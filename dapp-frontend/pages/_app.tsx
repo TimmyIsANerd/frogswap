@@ -21,9 +21,7 @@ function getLibrary(provider: any) {
 const AppContent = ({ children }: any) => {
   return (
     <div className="bg-[#0c0c0c] min-h-screen scroll-smooth flex flex-col w-screen overflow-hidden relative">
-      <Header />
       <div className="overflow-auto flex-1">{children}</div>
-      <Footer />
     </div>
   );
 };
