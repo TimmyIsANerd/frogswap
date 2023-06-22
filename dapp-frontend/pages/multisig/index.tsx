@@ -2,17 +2,17 @@ import Head from 'next/head';
 
 
 const MultiSig = () => {
-    return (  
+    return (
         <>
             <Head>
-                <title>VeFi Dapps | MultiSig</title>
+                <title>FrogSwap | MultiSig</title>
             </Head>
 
             <div className="container">
-                
+
             </div>
         </>
     );
 }
- 
+
 export default MultiSig;

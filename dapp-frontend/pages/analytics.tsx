@@ -38,7 +38,7 @@ export default function Analytics() {
   return (
     <>
       <Head>
-        <title>Vefi DApps | Analytics</title>
+        <title>FrogSwap | Analytics</title>
       </Head>
       <RenderedView />
     </>

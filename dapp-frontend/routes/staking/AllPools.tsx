@@ -19,9 +19,8 @@ enum SubRoutes {
 
 const FilterBtn = ({ isActive, onClick, children }: { isActive: boolean; onClick: (event?: MouseEvent) => any; children: any }) => (
   <button
-    className={`${
-      isActive ? 'bg-[#373b4f] rounded-[6px] text-[#a6b2ec]' : 'bg-transparent text-[#cdcccc]'
-    } py-2 px-2 flex justify-center text-[0.3em] lg:text-[0.65em] font-Poppins font-[400]`}
+    className={`${isActive ? 'bg-[#373b4f] rounded-[6px] text-[#68964bb9]' : 'bg-transparent text-[#cdcccc]'
+      } py-2 px-2 flex justify-center text-[0.3em] lg:text-[0.65em] font-Poppins font-[400]`}
     onClick={onClick}
   >
     {children}
@@ -36,9 +35,8 @@ const countdownRender = ({ days, hours, minutes, seconds }: any) => (
 
 const StatusLabel = ({ timestamp }: { timestamp: number }) => (
   <div
-    className={`flex justify-center items-center rounded-[30px] px-1 py-1 ${
-      multiply(timestamp, 1000) > Date.now() ? 'bg-[#02c35b]/[.15] text-[#23e33e]' : 'bg-[#f63859]/10 text-[#f73859]'
-    }`}
+    className={`flex justify-center items-center rounded-[30px] px-1 py-1 ${multiply(timestamp, 1000) > Date.now() ? 'bg-[#02c35b]/[.15] text-[#23e33e]' : 'bg-[#f63859]/10 text-[#f73859]'
+      }`}
   >
     <span className="font-Syne font-[400] text-[0.72em] capitalize">{multiply(timestamp, 1000) > Date.now() ? 'live' : 'sold out'}</span>
   </div>
@@ -91,14 +89,14 @@ const All = ({ searchValue = '' }: { searchValue?: string }) => {
             map(
               trim(searchValue).length > 0
                 ? filter(
-                    data,
-                    (item) =>
-                      startsWith(item.id.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.stakedToken.name.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.rewardToken.name.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.stakedToken.id.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.rewardToken.id.toLowerCase(), searchValue.toLowerCase())
-                  )
+                  data,
+                  (item) =>
+                    startsWith(item.id.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.stakedToken.name.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.rewardToken.name.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.stakedToken.id.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.rewardToken.id.toLowerCase(), searchValue.toLowerCase())
+                )
                 : data,
               (item, index) => (
                 <TRow key={index}>
@@ -223,14 +221,14 @@ const Available = ({ searchValue = '' }: { searchValue?: string }) => {
             map(
               trim(searchValue).length > 0
                 ? filter(
-                    data,
-                    (item) =>
-                      startsWith(item.id.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.stakedToken.name.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.rewardToken.name.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.stakedToken.id.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.rewardToken.id.toLowerCase(), searchValue.toLowerCase())
-                  )
+                  data,
+                  (item) =>
+                    startsWith(item.id.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.stakedToken.name.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.rewardToken.name.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.stakedToken.id.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.rewardToken.id.toLowerCase(), searchValue.toLowerCase())
+                )
                 : data,
               (item, index) => (
                 <TRow key={index}>
@@ -355,14 +353,14 @@ const SoldOut = ({ searchValue = '' }: { searchValue?: string }) => {
             map(
               trim(searchValue).length > 0
                 ? filter(
-                    data,
-                    (item) =>
-                      startsWith(item.id.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.stakedToken.name.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.rewardToken.name.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.stakedToken.id.toLowerCase(), searchValue.toLowerCase()) ||
-                      startsWith(item.rewardToken.id.toLowerCase(), searchValue.toLowerCase())
-                  )
+                  data,
+                  (item) =>
+                    startsWith(item.id.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.stakedToken.name.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.rewardToken.name.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.stakedToken.id.toLowerCase(), searchValue.toLowerCase()) ||
+                    startsWith(item.rewardToken.id.toLowerCase(), searchValue.toLowerCase())
+                )
                 : data,
               (item, index) => (
                 <TRow key={index}>

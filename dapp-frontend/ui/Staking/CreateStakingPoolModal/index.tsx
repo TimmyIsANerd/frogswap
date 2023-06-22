@@ -231,7 +231,7 @@ export default function CreateStakingPoolModal({ isOpen, onClose }: CreateStakin
                         >
                           <FiX />
                         </button>
-                        <h2 className="lg:text-2xl text-sm font-[700] font-Syne capitalize text-[#88aee7]">create staking pool</h2>
+                        <h2 className="lg:text-2xl text-sm font-[700] font-Syne capitalize text-[#68964b]">create staking pool</h2>
                       </div>
                       <div className="flex justify-center items-center gap-4">
                         {activeStep > 0 && !isSubmittable && (
@@ -257,7 +257,7 @@ export default function CreateStakingPoolModal({ isOpen, onClose }: CreateStakin
                           <button
                             onClick={submit}
                             disabled={isLoading || !isSubmittable}
-                            className="capitalize font-Inter font-[500] border border-[#105dcf] text-[0.5em] lg:text-[0.85em] bg-[#105dcf] text-[#fff] rounded-[8px] lg:px-4 px-1 lg:py-2 py-1 shadow-[0_1px_2px_rgba(16,_24,_40,_0.05)] flex justify-center items-center gap-2"
+                            className="capitalize font-Inter font-[500] border border-[#68964b] text-[0.5em] lg:text-[0.85em] bg-[#68964b] text-[#fff] rounded-[8px] lg:px-4 px-1 lg:py-2 py-1 shadow-[0_1px_2px_rgba(16,_24,_40,_0.05)] flex justify-center items-center gap-2"
                           >
                             submit {isLoading && <TailSpin color="#dcdcdc" visible={isLoading} width={20} height={20} />}
                           </button>
@@ -268,7 +268,7 @@ export default function CreateStakingPoolModal({ isOpen, onClose }: CreateStakin
                                 onClick={() => {
                                   if (activeStep < 2) setActiveStep((step) => step + 1);
                                 }}
-                                className="capitalize font-Inter font-[500] border border-[#105dcf] text-[0.5em] lg:text-[0.85em] bg-[#105dcf] text-[#fff] rounded-[8px] lg:px-4 px-1 lg:py-2 py-1 shadow-[0_1px_2px_rgba(16,_24,_40,_0.05)]"
+                                className="capitalize font-Inter font-[500] border border-[#68964b] text-[0.5em] lg:text-[0.85em] bg-[#68964b] text-[#fff] rounded-[8px] lg:px-4 px-1 lg:py-2 py-1 shadow-[0_1px_2px_rgba(16,_24,_40,_0.05)]"
                               >
                                 next
                               </button>
@@ -426,8 +426,8 @@ export default function CreateStakingPoolModal({ isOpen, onClose }: CreateStakin
                                 {poolCreationData.stakeTokenAddress === AddressZero
                                   ? chain.name
                                   : !!stakeTokenDetails
-                                  ? stakeTokenDetails.name
-                                  : 'null'}
+                                    ? stakeTokenDetails.name
+                                    : 'null'}
                               </span>
                             </div>
                             <div className="w-full flex flex-col justify-start items-start gap-2 font-Syne">
@@ -436,8 +436,8 @@ export default function CreateStakingPoolModal({ isOpen, onClose }: CreateStakin
                                 {poolCreationData.rewardTokenAddress === AddressZero
                                   ? chain.name
                                   : !!rewardTokenDetails
-                                  ? rewardTokenDetails.name
-                                  : 'null'}
+                                    ? rewardTokenDetails.name
+                                    : 'null'}
                               </span>
                             </div>
                             <div className="w-full flex flex-col justify-start items-start gap-2 font-Syne">
@@ -446,8 +446,8 @@ export default function CreateStakingPoolModal({ isOpen, onClose }: CreateStakin
                                 {poolCreationData.stakeTokenAddress === AddressZero
                                   ? chain.symbol
                                   : !!stakeTokenDetails
-                                  ? stakeTokenDetails.symbol
-                                  : 'null'}
+                                    ? stakeTokenDetails.symbol
+                                    : 'null'}
                               </span>
                             </div>
                             <div className="w-full flex flex-col justify-start items-start gap-2 font-Syne">
@@ -456,8 +456,8 @@ export default function CreateStakingPoolModal({ isOpen, onClose }: CreateStakin
                                 {poolCreationData.rewardTokenAddress === AddressZero
                                   ? chain.symbol
                                   : !!rewardTokenDetails
-                                  ? rewardTokenDetails.symbol
-                                  : 'null'}
+                                    ? rewardTokenDetails.symbol
+                                    : 'null'}
                               </span>
                             </div>
                             <div className="w-full flex flex-col justify-start items-start gap-2 font-Syne">
@@ -490,8 +490,8 @@ export default function CreateStakingPoolModal({ isOpen, onClose }: CreateStakin
                                 {poolCreationData.rewardTokenAddress === AddressZero
                                   ? chain.symbol
                                   : !!rewardTokenDetails
-                                  ? rewardTokenDetails.symbol
-                                  : 'null'}
+                                    ? rewardTokenDetails.symbol
+                                    : 'null'}
                               </span>
                             </div>
                             <div className="w-full flex flex-col justify-start items-start gap-2 font-Syne">

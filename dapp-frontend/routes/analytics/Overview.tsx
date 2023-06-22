@@ -63,9 +63,8 @@ enum TransactionView {
 
 const FilterBtn = ({ isActive, onClick, children }: { isActive: boolean; onClick: (event?: MouseEvent) => any; children: any }) => (
   <button
-    className={`${
-      isActive ? 'bg-[#373b4f] rounded-[6px] text-[#a6b2ec]' : 'bg-transparent text-[#cdcccc]'
-    } py-2 px-2 flex justify-center text-[0.3em] lg:text-[0.65em] font-Poppins font-[400]`}
+    className={`${isActive ? 'bg-[#373b4f] rounded-[6px] text-[#68964bb9]' : 'bg-transparent text-[#cdcccc]'
+      } py-2 px-2 flex justify-center text-[0.3em] lg:text-[0.65em] font-Poppins font-[400]`}
     onClick={onClick}
   >
     {children}
@@ -88,7 +87,7 @@ const OverviewChart = ({ period }: { period: ChartPeriod }) => {
   return (
     <div className="w-full px-4 py-4 border border-[#5d5d5d] rounded-[8px] min-h-[24rem]">
       <div className="flex flex-col gap-5 justify-center items-start w-full">
-        <span className="text-[#a6b2ec] font-Syne text-[1.5em] capitalize font-[700]">vefi DEX info & analytics</span>
+        <span className="text-[#68964bb9] font-Syne text-[1.5em] capitalize font-[700]">vefi DEX info & analytics</span>
         <div className="flex justify-start items-center gap-0 w-auto bg-[#fff]/[.07] rounded-[6px] px-1 py-1">
           <FilterBtn
             isActive={chartView === ChartView.TX}
@@ -482,7 +481,7 @@ const TransactionsList = () => {
                   {map(item.swaps, (swap, i) => (
                     <TRow key={i}>
                       <TCell className="text-center py-2">
-                        <span className="bg-[#3878d7]/[.10] text-[#3878d7] font-Syne px-1 py-1 capitalize text-[0.75em] rounded-[30px]">swap</span>
+                        <span className="bg-[#68964b]/[.10] text-[#68964b] font-Syne px-1 py-1 capitalize text-[0.75em] rounded-[30px]">swap</span>
                       </TCell>
                       <TCell className="text-center py-2 text-[#fff] font-Poppins text-[0.86em] font-[400] hidden lg:table-cell">
                         ${millify(parseFloat(swap.amountUSD))}
@@ -820,7 +819,7 @@ const TransactionsList = () => {
                 (item, index) => (
                   <TRow key={index}>
                     <TCell className="text-center py-2">
-                      <span className="bg-[#3878d7]/[.10] text-[#3878d7] font-Syne px-1 py-1 capitalize text-[0.75em] rounded-[30px]">swap</span>
+                      <span className="bg-[#68964b]/[.10] text-[#68964b] font-Syne px-1 py-1 capitalize text-[0.75em] rounded-[30px]">swap</span>
                     </TCell>
                     <TCell className="text-center py-4 text-[#fff] font-Poppins text-[0.86em] font-[400] hidden lg:table-cell">
                       ${millify(parseFloat(item.amountUSD))}

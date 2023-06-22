@@ -338,7 +338,7 @@ export default function Swap() {
                   </div>
                 </div>
                 <div className="flex justify-center items-center">
-                  <button onClick={switchSelectedTokens} className="bg-transparent text-[#a6b2ec] text-[1em] rounded-full border border-[#a6b2ec]">
+                  <button onClick={switchSelectedTokens} className="bg-transparent text-[#68964bb9] text-[1em] rounded-full border border-[#68964bb9]">
                     <MdArrowDownward />
                   </button>
                 </div>
@@ -378,7 +378,7 @@ export default function Swap() {
                       <span className="text-white font-[300]">
                         {val1} {firstSelectedTokenDetails?.symbol}
                       </span>
-                      <AiOutlineSwap className="text-[#a6b2ec] font-[400] text-[1.9em]" />
+                      <AiOutlineSwap className="text-[#68964bb9] font-[400] text-[1.9em]" />
                       <span className="text-white font-[300]">
                         {outputAmount} {secondSelectedTokenDetails?.symbol}
                       </span>

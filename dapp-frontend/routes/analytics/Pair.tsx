@@ -48,9 +48,8 @@ enum TransactionView {
 
 const FilterBtn = ({ isActive, onClick, children }: { isActive: boolean; onClick: (event?: MouseEvent) => any; children: any }) => (
   <button
-    className={`${
-      isActive ? 'bg-[#373b4f] rounded-[6px] text-[#a6b2ec]' : 'bg-transparent text-[#cdcccc]'
-    } py-2 px-2 flex justify-center text-[0.3em] lg:text-[0.65em] font-Poppins font-[400]`}
+    className={`${isActive ? 'bg-[#373b4f] rounded-[6px] text-[#68964bb9]' : 'bg-transparent text-[#cdcccc]'
+      } py-2 px-2 flex justify-center text-[0.3em] lg:text-[0.65em] font-Poppins font-[400]`}
     onClick={onClick}
   >
     {children}
@@ -243,7 +242,7 @@ const TransactionsList = ({ pair }: { pair: string }) => {
                       <span className="bg-[#f63859]/[.1] text-[#f63859] font-Syne px-1 py-1 capitalize text-[0.75em] rounded-[30px]">remove</span>
                     )}
                     {txn.type === 'swap' && (
-                      <span className="bg-[#3878d7]/[.10] text-[#3878d7] font-Syne px-1 py-1 capitalize text-[0.75em] rounded-[30px]">swap</span>
+                      <span className="bg-[#68964b]/[.10] text-[#68964b] font-Syne px-1 py-1 capitalize text-[0.75em] rounded-[30px]">swap</span>
                     )}
                   </TCell>
                   <TCell className="text-center py-4 text-[#fff] font-Poppins text-[0.86em] font-[400] hidden lg:table-cell">
@@ -526,7 +525,7 @@ const TransactionsList = ({ pair }: { pair: string }) => {
             {map(data.swaps.slice((allSwapsPage - 1) * 10, allSwapsPage * 10), (item, index) => (
               <TRow key={index}>
                 <TCell className="text-center py-2">
-                  <span className="bg-[#3878d7]/[.10] text-[#3878d7] font-Syne px-1 py-1 capitalize text-[0.75em] rounded-[30px]">swap</span>
+                  <span className="bg-[#68964b]/[.10] text-[#68964b] font-Syne px-1 py-1 capitalize text-[0.75em] rounded-[30px]">swap</span>
                 </TCell>
                 <TCell className="text-center py-4 text-[#fff] font-Poppins text-[0.86em] font-[400] hidden lg:table-cell">
                   ${millify(parseFloat(item.amountUSD))}
@@ -609,8 +608,7 @@ const TransactionsList = ({ pair }: { pair: string }) => {
                   isActive={transactionView === TransactionView.ALL}
                   onClick={() =>
                     push(
-                      `${new URL(asPath, window.location.href).pathname}?view=singlePair&pair=${pair}&tab=${Tabs.TXNS}&transactionView=${
-                        TransactionView.ALL
+                      `${new URL(asPath, window.location.href).pathname}?view=singlePair&pair=${pair}&tab=${Tabs.TXNS}&transactionView=${TransactionView.ALL
                       }`
                     )
                   }
@@ -621,8 +619,7 @@ const TransactionsList = ({ pair }: { pair: string }) => {
                   isActive={transactionView === TransactionView.SWAPS}
                   onClick={() =>
                     push(
-                      `${new URL(asPath, window.location.href).pathname}?view=singlePair&pair=${pair}&tab=${Tabs.TXNS}&transactionView=${
-                        TransactionView.SWAPS
+                      `${new URL(asPath, window.location.href).pathname}?view=singlePair&pair=${pair}&tab=${Tabs.TXNS}&transactionView=${TransactionView.SWAPS
                       }`
                     )
                   }
@@ -633,8 +630,7 @@ const TransactionsList = ({ pair }: { pair: string }) => {
                   isActive={transactionView === TransactionView.ADDS}
                   onClick={() =>
                     push(
-                      `${new URL(asPath, window.location.href).pathname}?view=singlePair&pair=${pair}&tab=${Tabs.TXNS}&transactionView=${
-                        TransactionView.ADDS
+                      `${new URL(asPath, window.location.href).pathname}?view=singlePair&pair=${pair}&tab=${Tabs.TXNS}&transactionView=${TransactionView.ADDS
                       }`
                     )
                   }
@@ -645,8 +641,7 @@ const TransactionsList = ({ pair }: { pair: string }) => {
                   isActive={transactionView === TransactionView.REMOVES}
                   onClick={() =>
                     push(
-                      `${new URL(asPath, window.location.href).pathname}?view=singlePair&pair=${pair}&tab=${Tabs.TXNS}&transactionView=${
-                        TransactionView.REMOVES
+                      `${new URL(asPath, window.location.href).pathname}?view=singlePair&pair=${pair}&tab=${Tabs.TXNS}&transactionView=${TransactionView.REMOVES
                       }`
                     )
                   }
@@ -702,7 +697,7 @@ export default function PairView() {
         <FiChevronRight />
         <Link href="/analytics?view=allStats&tab=pairs">pairs</Link>
         <FiChevronRight />
-        <span className="text-[#105dcf]">view pair</span>
+        <span className="text-[#68964b]">view pair</span>
       </div>
       <TailSpin color="#dcdcdc" visible={isLoading} width={20} height={20} />
       {query.pair && data && (
@@ -727,10 +722,10 @@ export default function PairView() {
                     {data.token0.symbol}/{data.token1.symbol}
                   </span>
                   <a href={chain.explorer + `/token/${query.pair as string}`} target="_blank" rel="noreferrer">
-                    <FiExternalLink className="text-[#a6b2ec] text-[0.58em] lg:text-[1.12em]" />
+                    <FiExternalLink className="text-[#68964bb9] text-[0.58em] lg:text-[1.12em]" />
                   </a>
                   <CopyToClipboard text={query.pair as string}>
-                    <FiCopy className="text-[#a6b2ec] text-[0.58em] lg:text-[1.12em] cursor-pointer" />
+                    <FiCopy className="text-[#68964bb9] text-[0.58em] lg:text-[1.12em] cursor-pointer" />
                   </CopyToClipboard>
                 </div>
                 <span className="capitalize font-Poppins text-[#fff] font-[400] text-[0.58em] lg:text-[1.12em]">
@@ -740,12 +735,12 @@ export default function PairView() {
             </div>
             <div className="flex justify-center items-center gap-3">
               <Link href={`/dex?tab=liquidity&child_tab=add_liquidity&inputToken=${data.token0.id}&outputToken=${data.token1.id}`}>
-                <button className="capitalize font-Inter font-[500] border border-[#3878d7] text-[0.5em] lg:text-[0.85em] bg-[#0c0c0c] text-[#3878d7] rounded-[8px] lg:px-4 px-1 lg:py-2 py-1 shadow-[0_1px_2px_rgba(16,_24,_40,_0.05)]">
+                <button className="capitalize font-Inter font-[500] border border-[#68964b] text-[0.5em] lg:text-[0.85em] bg-[#0c0c0c] text-[#68964b] rounded-[8px] lg:px-4 px-1 lg:py-2 py-1 shadow-[0_1px_2px_rgba(16,_24,_40,_0.05)]">
                   add liquidity
                 </button>
               </Link>
               <Link href={`/dex?tab=swap&inputToken=${data.token0.id}&outputToken=${data.token1.id}`}>
-                <button className="capitalize font-Inter font-[500] border border-[#105dcf] text-[0.5em] lg:text-[0.85em] bg-[#105dcf] text-[#fff] rounded-[8px] lg:px-4 px-1 lg:py-2 py-1 shadow-[0_1px_2px_rgba(16,_24,_40,_0.05)]">
+                <button className="capitalize font-Inter font-[500] border border-[#68964b] text-[0.5em] lg:text-[0.85em] bg-[#68964b] text-[#fff] rounded-[8px] lg:px-4 px-1 lg:py-2 py-1 shadow-[0_1px_2px_rgba(16,_24,_40,_0.05)]">
                   trade
                 </button>
               </Link>

@@ -93,7 +93,7 @@ const LPRoute = () => {
                 <span className="text-[#fff] font-Poppins font-[400] capitalize">connect wallet to view your liquidity</span>
                 <button
                   onClick={() => setIsProviderSelectModalVisible(true)}
-                    className="flex justify-center items-center bg-[#68964b] py-4 px-2 rounded-[8px] gap-2 text-[0.89em] text-white w-full"
+                  className="flex justify-center items-center bg-[#68964b] py-4 px-2 rounded-[8px] gap-2 text-[0.89em] text-white w-full"
                 >
                   <FaWallet /> <span className="font-Syne capitalize">connect wallet</span>
                 </button>
@@ -301,7 +301,7 @@ const AddLiquidityRoute = () => {
           <TradeCard>
             <div className="flex flex-col justify-evenly items-center w-full h-full">
               <div className="flex justify-between w-full py-6 px-3">
-                <button onClick={() => back()} className="bg-transparent text-[#a6b2ec] text-[30px]">
+                <button onClick={() => back()} className="bg-transparent text-[#68964bb9] text-[30px]">
                   <FiArrowLeftCircle />
                 </button>
                 <div className="flex flex-col justify-center items-start">
@@ -309,7 +309,7 @@ const AddLiquidityRoute = () => {
                   <p className="font-[400] font-Poppins text-[0.9em] text-[#9d9d9d] capitalize">receive LP tokens</p>
                 </div>
                 <div className="flex justify-center items-center gap-2">
-                  <button onClick={() => setIsSettingsModalVisible(true)} className="bg-transparent text-[#a6b2ec] text-[30px]">
+                  <button onClick={() => setIsSettingsModalVisible(true)} className="bg-transparent text-[#68964bb9] text-[30px]">
                     <FiSettings />
                   </button>
                 </div>
@@ -369,7 +369,7 @@ const AddLiquidityRoute = () => {
                   </div>
                 </div>
                 <div className="flex justify-center items-center">
-                  <button className="bg-transparent text-[#a6b2ec] text-[1em] rounded-full border border-[#a6b2ec]">
+                  <button className="bg-transparent text-[#68964bb9] text-[1em] rounded-full border border-[#68964bb9]">
                     <FiPlus />
                   </button>
                 </div>
@@ -405,14 +405,14 @@ const AddLiquidityRoute = () => {
                 <button
                   onClick={addLiquidity}
                   disabled={isLoading || !active}
-                  className="flex justify-center items-center bg-[#105dcf] py-4 px-3 text-[0.95em] text-white w-full rounded-[8px] gap-3"
+                  className="flex justify-center items-center bg-[#68964b] py-4 px-3 text-[0.95em] text-white w-full rounded-[8px] gap-3"
                 >
                   <span className="font-Syne">
                     {!active
                       ? 'Wallet not connected'
                       : val1 > balance1
-                      ? `Insufficient ${firstSelectedTokenDetails?.symbol} balance`
-                      : 'Add Liquidity'}
+                        ? `Insufficient ${firstSelectedTokenDetails?.symbol} balance`
+                        : 'Add Liquidity'}
                   </span>
                   <TailSpin color="#dcdcdc" visible={isLoading} width={20} height={20} />
                 </button>
@@ -477,7 +477,7 @@ const FindOtherLPRoute = () => {
         <TradeCard>
           <div className="flex flex-col justify-evenly items-center w-full gap-5">
             <div className="flex justify-between w-full py-6 px-3">
-              <button onClick={() => back()} className="bg-transparent text-[#a6b2ec] text-[30px]">
+              <button onClick={() => back()} className="bg-transparent text-[#68964bb9] text-[30px]">
                 <FiArrowLeftCircle />
               </button>
               <div className="flex flex-col justify-center items-start">
@@ -485,7 +485,7 @@ const FindOtherLPRoute = () => {
                 <p className="font-[400] font-Poppins text-[0.9em] text-[#9d9d9d] capitalize">import an existing LP token</p>
               </div>
               <div className="flex justify-center items-center gap-2">
-                <button onClick={() => setIsSettingsModalVisible(true)} className="bg-transparent text-[#a6b2ec] text-[30px]">
+                <button onClick={() => setIsSettingsModalVisible(true)} className="bg-transparent text-[#68964bb9] text-[30px]">
                   <FiSettings />
                 </button>
               </div>
@@ -505,7 +505,7 @@ const FindOtherLPRoute = () => {
                 </div>
                 <FiChevronDown />
               </button>
-              <button className="bg-transparent text-[#a6b2ec] text-[1em] rounded-full border border-[#a6b2ec]">
+              <button className="bg-transparent text-[#68964bb9] text-[1em] rounded-full border border-[#68964bb9]">
                 <FiPlus />
               </button>
               <button
@@ -528,8 +528,8 @@ const FindOtherLPRoute = () => {
                 ) : (
                   <button
                     disabled={isImportLoading || map(positions, (lp) => lp.pair.id).includes(pair)}
-                    onClick={() => {}}
-                    className="flex justify-center items-center bg-[#105dcf] py-4 px-3 text-[0.95em] text-white w-full rounded-[8px] gap-3"
+                    onClick={() => { }}
+                    className="flex justify-center items-center bg-[#68964b] py-4 px-3 text-[0.95em] text-white w-full rounded-[8px] gap-3"
                   >
                     <span className="font-Syne capitalize">import</span>
                     <TailSpin color="#dcdcdc" visible={isImportLoading} width={20} height={20} />

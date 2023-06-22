@@ -4,7 +4,7 @@
 
 @layer base {
   .collapse-arrow {
-    @apply text-[#a6b2ec];
+    @apply text-[#68964bb9];
   }
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {

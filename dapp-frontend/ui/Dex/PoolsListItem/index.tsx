@@ -79,7 +79,7 @@ export default function UserLPItem({ pair }: any) {
             </button>
             <button
               onClick={() => push(`/dex?tab=liquidity&child_tab=add_liquidity&inputToken=${pair.pair.token0.id}&outputToken=${pair.pair.token1.id}`)}
-              className="border-[#a6b2ec] border rounded-[8px] w-full py-[13px] px-[17px] text-[#a6b2ec] text-[0.89em] font-[600] flex justify-center items-center gap-2"
+              className="border-[#68964bb9] border rounded-[8px] w-full py-[13px] px-[17px] text-[#68964bb9] text-[0.89em] font-[600] flex justify-center items-center gap-2"
             >
               <FiPlus /> <span className="font-Syne capitalize">add liquidity</span>
             </button>

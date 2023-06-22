@@ -205,7 +205,7 @@ export default function RemoveLiquidityModal({ isVisible, onClose, pair }: IRemo
                     <FiArrowDownCircle className="text-white text-[20px]" />
                   </div>
                   <div className="flex flex-col justify-start items-start gap-2 w-full px-3 py-3">
-                    <span className="text-[#a6b2ec] font-Syne font-[600] text-[0.8em] lg:text-[0.82em] capitalize">you will receive</span>
+                    <span className="text-[#68964bb9] font-Syne font-[600] text-[0.8em] lg:text-[0.82em] capitalize">you will receive</span>
                     <div className="flex flex-col justify-center items-center gap-7 w-full px-2 py-4">
                       <div className="flex justify-between gap-2 items-center w-full">
                         <div className="flex justify-center items-center gap-1">
@@ -219,7 +219,7 @@ export default function RemoveLiquidityModal({ isVisible, onClose, pair }: IRemo
                           </div>
                           <span className="font-Syne text-white text-[20px] text-[600]">{pairData?.token0.symbol}</span>
                         </div>
-                        <span className="font-Poppins text-[#a6b2ec] text-[20px]">{token0LiquidityValue}</span>
+                        <span className="font-Poppins text-[#68964bb9] text-[20px]">{token0LiquidityValue}</span>
                       </div>
                       <div className="flex justify-between gap-2 items-center w-full">
                         <div className="flex justify-center items-center gap-1">
@@ -233,14 +233,14 @@ export default function RemoveLiquidityModal({ isVisible, onClose, pair }: IRemo
                           </div>
                           <span className="font-Syne text-white text-[20px] text-[600]">{pairData?.token1.symbol}</span>
                         </div>
-                        <span className="font-Poppins text-[#a6b2ec] text-[20px]">{token1LiquidityValue}</span>
+                        <span className="font-Poppins text-[#68964bb9] text-[20px]">{token1LiquidityValue}</span>
                       </div>
                     </div>
                   </div>
                   <button
                     disabled={value === 0 || token0LiquidityValue === 0 || token1LiquidityValue === 0 || isLoading}
                     onClick={removeLiquidity}
-                    className="flex justify-center items-center bg-[#105dcf] py-4 px-3 text-[0.95em] text-white w-full rounded-[8px] gap-3 font-Syne capitalize"
+                    className="flex justify-center items-center bg-[#68964b] py-4 px-3 text-[0.95em] text-white w-full rounded-[8px] gap-3 font-Syne capitalize"
                   >
                     remove <TailSpin color="#dcdcdc" visible={isLoading} width={20} height={20} />
                   </button>

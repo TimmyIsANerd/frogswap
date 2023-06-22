@@ -6,7 +6,7 @@ export default function IDO() {
   return (
     <>
       <Head>
-        <title>Vefi DApps | IDO</title>
+        <title>FrogSwap | IDO</title>
       </Head>
       <div className="container mx-auto">
         <div className="w-full">

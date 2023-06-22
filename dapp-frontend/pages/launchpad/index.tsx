@@ -7,7 +7,7 @@ export default function Launchpad() {
   return (
     <>
       <Head>
-        <title>Vefi Dapps | Launchpad</title>
+        <title>FrogSwap | Launchpad</title>
       </Head>
       <div className="container mx-auto">
         <section className="flex items-center h-[80vh] w-full relative">
@@ -16,7 +16,7 @@ export default function Launchpad() {
               <h1 className="font-Syne text-[48px] text-white font-[700] leading-[58px]">Launch a successful IDO with ease-all in one place.</h1>
             </div>
             <div>
-              <button type="button" className="btn my-5 normal-case font-Syne bg-[#105DCF] text-white rounded-[15px] text-[12px] px-5 border-none">
+              <button type="button" className="btn my-5 normal-case font-Syne bg-[#68964b] text-white rounded-[15px] text-[12px] px-5 border-none">
                 Apply for IDO
               </button>
             </div>
@@ -62,7 +62,7 @@ export default function Launchpad() {
               <LaunchPadCard />
               <LaunchPadCard />
             </div>
-            <button type="button" className="btn my-5 normal-case font-Syne bg-[#105DCF] text-white rounded-[15px] text-[12px] px-5 border-none">
+            <button type="button" className="btn my-5 normal-case font-Syne bg-[#68964b] text-white rounded-[15px] text-[12px] px-5 border-none">
               View more
             </button>
           </div>
