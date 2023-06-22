@@ -57,11 +57,12 @@ export default function Launchpad() {
         <section className="flex flex-col h-fit my-10 ">
           <div className="container mx-auto ">
             <h1 className="max-w-[450px] text-white font-Syne font-[700] text-[32px] py-8">Explore live IDO projects on our launchpad</h1>
-            <div className="grid grid0cols-1 md:grid-cols-3 gap-3">
+            <p>There are No Live Projects at this time...</p>
+            {/* <div className="grid grid0cols-1 md:grid-cols-3 gap-3">
               <LaunchPadCard />
               <LaunchPadCard />
               <LaunchPadCard />
-            </div>
+            </div> */}
             <button type="button" className="btn my-5 normal-case font-Syne bg-[#68964b] text-white rounded-[15px] text-[12px] px-5 border-none">
               View more
             </button>

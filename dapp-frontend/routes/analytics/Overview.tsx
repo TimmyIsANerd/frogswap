@@ -87,7 +87,7 @@ const OverviewChart = ({ period }: { period: ChartPeriod }) => {
   return (
     <div className="w-full px-4 py-4 border border-[#5d5d5d] rounded-[8px] min-h-[24rem]">
       <div className="flex flex-col gap-5 justify-center items-start w-full">
-        <span className="text-[#68964bb9] font-Syne text-[1.5em] capitalize font-[700]">vefi DEX info & analytics</span>
+        <span className="text-[#68964bb9] font-Syne text-[1.5em] capitalize font-[700]">Frog Swap DEX info & analytics</span>
         <div className="flex justify-start items-center gap-0 w-auto bg-[#fff]/[.07] rounded-[6px] px-1 py-1">
           <FilterBtn
             isActive={chartView === ChartView.TX}
