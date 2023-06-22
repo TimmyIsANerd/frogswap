@@ -54,19 +54,19 @@ export default function SwapSettingsModal({ isOpen = false, onClose }: SwapSetti
                   </div>
                   <div className="px-5 py-5 flex flex-col gap-2 font-Syne justify-center">
                     <div className="flex flex-col justify-center items-start gap-1">
-                      <h2 className="text-[#a6b2ec] capitalize text-2l font-semibold">Swaps &amp; Liquidity</h2>
+                      <h2 className="text-[#68964bb9] capitalize text-2l font-semibold">Swaps &amp; Liquidity</h2>
                       <div className="flex flex-row items-center w-full justify-start py-2 text-sm text-slate-300 gap-1">
                         <span className="font-[700] font-Syne">Default Transaction Speed (GWEI)</span>
                         <div className="tooltip tooltip-bottom" data-tip="How fast do you want this transaction?">
-                          <FaQuestionCircle className="text-[1em] text-[#105dcf]" />
+                          <FaQuestionCircle className="text-[1em] text-[#68964b]" />
                         </div>
                       </div>
                       <div className="flex flex-row flex-wrap items-center justify-start gap-1 w-full ">
                         <button
                           type="button"
                           className={`h-7 mr-1 rounded-[10px] border border-[#555555] p-2 flex items-center justify-center outline-0 text-[0.87em] ${
-                            gasPrice === 100 ? 'bg-[#a6b2ec] text-[#373b4f]' : 'bg-[#333333] text-[#a6b2ec]'
-                          } hover:bg-[#a6b2ec]`}
+                            gasPrice === 100 ? 'bg-[#68964bb9] text-[#373b4f]' : 'bg-[#333333] text-[#68964bb9]'
+                          } hover:bg-[#68964bb9]`}
                           onClick={() => changeGasPrice(100)}
                         >
                           Standard (100)
@@ -75,8 +75,8 @@ export default function SwapSettingsModal({ isOpen = false, onClose }: SwapSetti
                         <button
                           type="button"
                           className={`h-7 mr-1 rounded-[10px] border border-[#555555] p-2 flex items-center justify-center outline-0 text-[0.87em] ${
-                            gasPrice === 150 ? 'bg-[#a6b2ec] text-[#373b4f]' : 'bg-[#333333] text-[#a6b2ec]'
-                          } hover:bg-[#a6b2ec]`}
+                            gasPrice === 150 ? 'bg-[#68964bb9] text-[#373b4f]' : 'bg-[#333333] text-[#68964bb9]'
+                          } hover:bg-[#68964bb9]`}
                           onClick={() => changeGasPrice(150)}
                         >
                           Fast (150)
@@ -84,8 +84,8 @@ export default function SwapSettingsModal({ isOpen = false, onClose }: SwapSetti
                         <button
                           type="button"
                           className={`h-7 mr-1 rounded-[10px] border border-[#555555] p-2 flex items-center justify-center outline-0 text-[0.87em] ${
-                            gasPrice === 250 ? 'bg-[#a6b2ec] text-[#373b4f]' : 'bg-[#333333] text-[#a6b2ec]'
-                          } hover:bg-[#a6b2ec]`}
+                            gasPrice === 250 ? 'bg-[#68964bb9] text-[#373b4f]' : 'bg-[#333333] text-[#68964bb9]'
+                          } hover:bg-[#68964bb9]`}
                           onClick={() => changeGasPrice(250)}
                         >
                           Super-Fast (250)
@@ -97,7 +97,7 @@ export default function SwapSettingsModal({ isOpen = false, onClose }: SwapSetti
                       <div className="flex flex-row items-center w-full justify-start text-sm gap-1 py-1">
                         <span className="capitalize text-2l font-semibold">Slippage Tolerance</span>
                         <div className="tooltip tooltip-bottom" data-tip="How much price change you're willing to permit during transaction.">
-                          <FaQuestionCircle className="text-[1em] text-[#105dcf]" />
+                          <FaQuestionCircle className="text-[1em] text-[#68964b]" />
                         </div>
                       </div>
                       <div className="flex flex-row flex-wrap items-center justify-start gap-1 w-full ">
@@ -105,8 +105,8 @@ export default function SwapSettingsModal({ isOpen = false, onClose }: SwapSetti
                           type="button"
                           onClick={() => changeSlippage(0.1)}
                           className={`w-1/5 rounded-[10px] p-1 border border-[#555555] flex items-center justify-center text-[0.87em] outline-0 ${
-                            slippageTolerance === 0.1 ? 'bg-[#a6b2ec] text-[#373b4f]' : 'bg-[#333333] text-[#a6b2ec]'
-                          } hover:bg-[#a6b2ec]`}
+                            slippageTolerance === 0.1 ? 'bg-[#68964bb9] text-[#373b4f]' : 'bg-[#333333] text-[#68964bb9]'
+                          } hover:bg-[#68964bb9]`}
                         >
                           0.1%
                         </button>
@@ -114,8 +114,8 @@ export default function SwapSettingsModal({ isOpen = false, onClose }: SwapSetti
                           type="button"
                           onClick={() => changeSlippage(0.5)}
                           className={`w-1/5 rounded-[10px] p-1 border border-[#555555] flex items-center justify-center outline-0 text-[0.87em] ${
-                            slippageTolerance === 0.5 ? 'bg-[#a6b2ec] text-[#373b4f]' : 'bg-[#333333] text-[#a6b2ec]'
-                          } hover:bg-[#a6b2ec]`}
+                            slippageTolerance === 0.5 ? 'bg-[#68964bb9] text-[#373b4f]' : 'bg-[#333333] text-[#68964bb9]'
+                          } hover:bg-[#68964bb9]`}
                         >
                           0.5%
                         </button>
@@ -123,15 +123,15 @@ export default function SwapSettingsModal({ isOpen = false, onClose }: SwapSetti
                           type="button"
                           onClick={() => changeSlippage(1)}
                           className={`w-1/5 rounded-[10px] p-1 border border-[#555555] flex items-center justify-center outline-0 text-[0.87em] ${
-                            slippageTolerance === 1 ? 'bg-[#a6b2ec] text-[#373b4f]' : 'bg-[#333333] text-[#a6b2ec]'
-                          } hover:bg-[#a6b2ec]`}
+                            slippageTolerance === 1 ? 'bg-[#68964bb9] text-[#373b4f]' : 'bg-[#333333] text-[#68964bb9]'
+                          } hover:bg-[#68964bb9]`}
                         >
                           1.0%
                         </button>
                         <input
                           type="number"
                           onChange={(e) => changeSlippage(e.target.valueAsNumber || 0.1)}
-                          className="w-1/5 rounded-[10px] py-1 px-2 border border-[#555555] flex items-center justify-center outline-0 text-[#a6b2ec] bg-[#333333] text-[0.87em]"
+                          className="w-1/5 rounded-[10px] py-1 px-2 border border-[#555555] flex items-center justify-center outline-0 text-[#68964bb9] bg-[#333333] text-[0.87em]"
                           placeholder="0.1%"
                         />
                       </div>
@@ -145,14 +145,14 @@ export default function SwapSettingsModal({ isOpen = false, onClose }: SwapSetti
                             className="tooltip tooltip-bottom"
                             data-tip="How long to wait after execution before a transaction is considered failed."
                           >
-                            <FaQuestionCircle className="text-[1em] text-[#105dcf]" />
+                            <FaQuestionCircle className="text-[1em] text-[#68964b]" />
                           </div>
                         </div>
                         <input
                           type="number"
                           value={txDeadlineInMins}
                           onChange={(e) => changeTXDeadline(e.target.valueAsNumber || 5)}
-                          className="w-1/5 rounded-[10px] py-1 px-2 border border-[#555555] flex items-center justify-center outline-0 text-[#a6b2ec] bg-[#333333] text-[0.87em]"
+                          className="w-1/5 rounded-[10px] py-1 px-2 border border-[#555555] flex items-center justify-center outline-0 text-[#68964bb9] bg-[#333333] text-[0.87em]"
                           placeholder="5"
                         />
                       </div>
@@ -200,14 +200,14 @@ export default function SwapSettingsModal({ isOpen = false, onClose }: SwapSetti
                         <div className="flex flex-row items-center w-full justify-start text-sm gap-1 py-1">
                           <span className="capitalize text-2l font-semibold">Play Sounds</span>
                           <div className="tooltip tooltip-bottom" data-tip="Sound FX for distinct transaction states.">
-                            <FaQuestionCircle className="text-[1em] text-[#105dcf]" />
+                            <FaQuestionCircle className="text-[1em] text-[#68964b]" />
                           </div>
                         </div>
 
                         <Switch
                           checked={playSounds}
                           onClick={switchSoundsMode}
-                          className={`${playSounds ? 'bg-[#105dcf]' : 'bg-[#333333]'} flex h-6 w-11 items-center rounded-full`}
+                          className={`${playSounds ? 'bg-[#68964b]' : 'bg-[#333333]'} flex h-6 w-11 items-center rounded-full`}
                         >
                           <span className="sr-only">Enable notifications</span>
                           <span

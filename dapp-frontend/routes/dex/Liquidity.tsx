@@ -51,7 +51,7 @@ const LPRoute = () => {
                 <p className="font-[400] font-Poppins text-[0.9em] text-[#9d9d9d]">Remove liquidity to get tokens back</p>
               </div>
               <div className="flex justify-evenly w-1/4">
-                <button onClick={() => setIsSettingsModalVisible(true)} className="bg-transparent text-[#a6b2ec] text-[1.8em]">
+                <button onClick={() => setIsSettingsModalVisible(true)} className="bg-transparent text-[#68964bb9] text-[1.8em]">
                   <FiSettings />
                 </button>
               </div>
@@ -77,13 +77,13 @@ const LPRoute = () => {
                 </div>
                 <button
                   onClick={() => push(`/dex?tab=liquidity&child_tab=${Route.FIND_OTHER_LP_TOKENS}`)}
-                  className="border-[#a6b2ec] border rounded-[8px] w-full py-[13px] px-[17px] text-[#a6b2ec] text-[0.89em] font-[600] flex justify-center"
+                  className="border-[#68964b] border rounded-[8px] w-full py-[13px] px-[17px] text-[#68964b] text-[0.89em] font-[600] flex justify-center"
                 >
                   <span className="font-Syne capitalize">find other LP tokens</span>
                 </button>
                 <button
                   onClick={() => push(`/dex?tab=liquidity&child_tab=${Route.ADD_LIQUIDITY}`)}
-                  className="flex justify-center items-center bg-[#105dcf] py-[13px] px-[17px] rounded-[8px] gap-2 text-[0.89em] text-white w-full"
+                  className="flex justify-center items-center bg-[#68964b] py-[13px] px-[17px] rounded-[8px] gap-2 text-[0.89em] text-white w-full"
                 >
                   <FiPlus /> <span className="font-Syne capitalize">add liquidity</span>
                 </button>
@@ -93,7 +93,7 @@ const LPRoute = () => {
                 <span className="text-[#fff] font-Poppins font-[400] capitalize">connect wallet to view your liquidity</span>
                 <button
                   onClick={() => setIsProviderSelectModalVisible(true)}
-                  className="flex justify-center items-center bg-[#105dcf] py-4 px-2 rounded-[8px] gap-2 text-[0.89em] text-white w-full"
+                    className="flex justify-center items-center bg-[#68964b] py-4 px-2 rounded-[8px] gap-2 text-[0.89em] text-white w-full"
                 >
                   <FaWallet /> <span className="font-Syne capitalize">connect wallet</span>
                 </button>
