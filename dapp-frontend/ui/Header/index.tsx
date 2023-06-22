@@ -71,16 +71,16 @@ export default function Header() {
         <div className="flex flex-row justify-between px-[38px] py-[16px] items-center w-full">
           <div className="flex justify-center items-center cursor-pointer">
             <Link href="/">
-              <Image src="/images/vefi.svg" alt="vefi_logo" width={80} height={40} />
+              <Image src="/frogswap.png" alt="vefi_logo" width={80} height={80} />
             </Link>
           </div>
           <div className="md:flex flex-row justify-center items-center hidden w-auto gap-3">
             <div className="px-[23px] cursor-pointer">
-              <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/dex">
-                <span className="text-white text-[1em] font-[400]">Trade</span>
+              <ActiveLink activeClassName="font-[800] border-b-2 border-[#68964b]" href="/dex">
+                <span className="text-white text-[1em] font-[400]">Swap</span>
               </ActiveLink>
             </div>
-            <div className="px-[23px] cursor-pointer">
+            {/* <div className="px-[23px] cursor-pointer">
               <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/analytics">
                 <span className="text-white text-[1em] font-[400]">Analytics</span>
               </ActiveLink>
@@ -94,17 +94,17 @@ export default function Header() {
               <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/staking">
                 <span className="text-white text-[1em] font-[400]">Staking Pools</span>
               </ActiveLink>
-            </div>
+            </div> */}
             {/* <div className="px-[23px] cursor-pointer">
               <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/multisig">
                 <span className="text-white text-[1em] font-[400]">Multi-Signature</span>
               </ActiveLink>
             </div>*/}
-            <div className="px-[23px] cursor-pointer">
+            {/* <div className="px-[23px] cursor-pointer">
               <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/bridge">
                 <span className="text-white text-[1em] font-[400]">Bridge</span>
               </ActiveLink>
-            </div> 
+            </div>  */}
           </div>
           <div className="flex justify-center items-center gap-2">
             <div className="flex justify-center items-center gap-2 flex-1">
@@ -124,7 +124,7 @@ export default function Header() {
                 <button
                   tabIndex={0}
                   onClick={() => !active && setShowProviderModal(true)}
-                  className="hidden lg:flex justify-center items-center bg-[#105dcf] py-[9px] px-[10px] text-[1em] text-white gap-2 rounded-[8px]"
+                  className="hidden lg:flex justify-center items-center bg-[#68964b] py-[9px] px-[10px] text-[1em] text-white gap-2 rounded-[8px]"
                 >
                   {active ? (
                     <>
