@@ -80,28 +80,28 @@ export default function Header() {
                 <span className="text-white text-[1em] font-[400]">Swap</span>
               </ActiveLink>
             </div>
-            {/* <div className="px-[23px] cursor-pointer">
-              <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/analytics">
+            <div className="px-[23px] cursor-pointer">
+              <ActiveLink activeClassName="font-[800] border-b-2 border-[#68964b]" href="/analytics">
                 <span className="text-white text-[1em] font-[400]">Analytics</span>
               </ActiveLink>
             </div>
             <div className="px-[23px] cursor-pointer">
-              <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/launchpad">
+              <ActiveLink activeClassName="font-[800] border-b-2 border-[#68964b]" href="/launchpad">
                 <span className="text-white text-[1em] font-[400]">Launchpad</span>
               </ActiveLink>
             </div>
             <div className="px-[23px] cursor-pointer">
-              <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/staking">
+              <ActiveLink activeClassName="font-[800] border-b-2 border-[#68964b]" href="/staking">
                 <span className="text-white text-[1em] font-[400]">Staking Pools</span>
               </ActiveLink>
-            </div> */}
+            </div>
             {/* <div className="px-[23px] cursor-pointer">
-              <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/multisig">
+              <ActiveLink activeClassName="font-[800] border-b-2 border-[#68964b]" href="/multisig">
                 <span className="text-white text-[1em] font-[400]">Multi-Signature</span>
               </ActiveLink>
             </div>*/}
             {/* <div className="px-[23px] cursor-pointer">
-              <ActiveLink activeClassName="font-[800] border-b-2 border-[#105dcf]" href="/bridge">
+              <ActiveLink activeClassName="font-[800] border-b-2 border-[#68964b]" href="/bridge">
                 <span className="text-white text-[1em] font-[400]">Bridge</span>
               </ActiveLink>
             </div>  */}
@@ -166,7 +166,7 @@ export default function Header() {
               )}
               <button
                 onClick={() => (!active ? setShowProviderModal(true) : disconnectWallet())}
-                className="flex justify-center items-center bg-[#105dcf] py-2 px-4 text-[0.52em] text-white gap-2 rounded-[8px]"
+                className="flex justify-center items-center bg-[#68964b] py-2 px-4 text-[0.52em] text-white gap-2 rounded-[8px]"
               >
                 {active ? (
                   <>{formatEthAddress(account as string, 4)}</>
