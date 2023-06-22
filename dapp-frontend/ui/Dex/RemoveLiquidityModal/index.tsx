@@ -175,25 +175,25 @@ export default function RemoveLiquidityModal({ isVisible, onClose, pair }: IRemo
                         <div className="flex justify-start items-center gap-2 w-full">
                           <button
                             onClick={() => setValue(25)}
-                            className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
+                            className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
                           >
                             25%
                           </button>
                           <button
                             onClick={() => setValue(50)}
-                            className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
+                            className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
                           >
                             50%
                           </button>
                           <button
                             onClick={() => setValue(75)}
-                            className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
+                            className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
                           >
                             75%
                           </button>
                           <button
                             onClick={() => setValue(100)}
-                            className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
+                            className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
                           >
                             100%
                           </button>

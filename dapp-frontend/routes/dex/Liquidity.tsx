@@ -344,25 +344,25 @@ const AddLiquidityRoute = () => {
                   <div className="flex justify-end items-center w-full gap-1">
                     <button
                       onClick={() => setVal1(multiply(1 / 4, balance1))}
-                      className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.75em]"
+                      className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.75em]"
                     >
                       25%
                     </button>
                     <button
                       onClick={() => setVal1(multiply(2 / 4, balance1))}
-                      className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.75em]"
+                      className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.75em]"
                     >
                       50%
                     </button>
                     <button
                       onClick={() => setVal1(multiply(3 / 4, balance1))}
-                      className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.75em]"
+                      className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.75em]"
                     >
                       75%
                     </button>
                     <button
                       onClick={() => setVal1(balance1)}
-                      className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.75em]"
+                      className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.75em]"
                     >
                       100%
                     </button>

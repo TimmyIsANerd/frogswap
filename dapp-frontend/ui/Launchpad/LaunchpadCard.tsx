@@ -46,7 +46,7 @@ export default function LaunchPadCard() {
               <span className="text-[#9A999C]">
                 <h1>Access</h1>
               </span>
-              <span className="text-[#3F84EA]">
+              <span className="text-[#68964b]">
                 <h1>Public.</h1>
               </span>
             </div>
@@ -54,7 +54,7 @@ export default function LaunchPadCard() {
               <span className="text-[#9A999C]">
                 <h1>ETHM price</h1>
               </span>
-              <span className="text-[#3F84EA]">
+              <span className="text-[#68964b]">
                 <h1>0.0000013 SAP</h1>
               </span>
             </div>
@@ -64,7 +64,7 @@ export default function LaunchPadCard() {
               <span className="text-[#9A999C]">
                 <h1>Liquidity</h1>
               </span>
-              <span className="text-[#3F84EA]">
+              <span className="text-[#68964b]">
                 <h1>80%</h1>
               </span>
             </div>
@@ -72,7 +72,7 @@ export default function LaunchPadCard() {
               <span className="text-[#9A999C]">
                 <h1>Swap deal</h1>
               </span>
-              <span className="text-[#3F84EA]">
+              <span className="text-[#68964b]">
                 <h1>0.0000013 ETHM = 1 $VEF</h1>
               </span>
             </div>
@@ -82,7 +82,7 @@ export default function LaunchPadCard() {
               <span className="text-[#9A999C]">
                 <h1>Lockup time</h1>
               </span>
-              <span className="text-[#3F84EA]">
+              <span className="text-[#68964b]">
                 <h1>30 days</h1>
               </span>
             </div>
@@ -90,7 +90,7 @@ export default function LaunchPadCard() {
               <span className="text-[#9A999C]">
                 <h1>soft-hard cap</h1>
               </span>
-              <span className="text-[#3F84EA]">
+              <span className="text-[#68964b]">
                 <h1>10 $sap - 20 $sap</h1>
               </span>
             </div>

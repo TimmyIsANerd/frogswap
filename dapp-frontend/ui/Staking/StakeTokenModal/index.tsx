@@ -206,25 +206,25 @@ export default function StakeTokenModal({ isOpen, onClose, selectedStakingPoolID
                                 <div className="flex justify-end items-center w-full gap-1">
                                   <button
                                     onClick={() => setStakedAmount(multiply(1 / 4, balance))}
-                                    className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
+                                    className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
                                   >
                                     25%
                                   </button>
                                   <button
                                     onClick={() => setStakedAmount(multiply(2 / 4, balance))}
-                                    className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
+                                    className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
                                   >
                                     50%
                                   </button>
                                   <button
                                     onClick={() => setStakedAmount(multiply(3 / 4, balance))}
-                                    className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
+                                    className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
                                   >
                                     75%
                                   </button>
                                   <button
                                     onClick={() => setStakedAmount(balance)}
-                                    className="border border-[#3f84ea] rounded-[8px] px-2 py-1 font-Syne text-[#3f84ea] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
+                                    className="border border-[#68964b] rounded-[8px] px-2 py-1 font-Syne text-[#68964b] capitalize font-[400] text-[0.58em] lg:text-[0.78em]"
                                   >
                                     100%
                                   </button>
